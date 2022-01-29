@@ -16,11 +16,11 @@ jobs:
       - name: test workflow
         run: echo "YAY this workflow is running"
       - name: Add github username
-        run: git config --global user.name 'kartik18G'
+        run: git config --global user.name 'atharav443'
       - name: Add github email
-        run: git config --global user.email 'gupta.kartik18kg@gmail.com'
+        run: git config --global user.email 'atharavnaik3@gmail.com'
       - name: add heroku remote
-        run: git remote add heroku https://heroku:${{secrets.HEROKU_API_KEY}}@git.heroku.com/${{secrets.HEROKU_APP_NAME}}.git
+        run: git remote add heroku https://heroku:685df7e1-ff0e-4538-a4ad-21861fe3cfac@git.heroku.com/atharav-recipe-api.git
       - name: Fetch repo
         run: git fetch --unshallow
       - name: push to heroku remote
