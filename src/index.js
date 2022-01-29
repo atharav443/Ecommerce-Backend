@@ -26,7 +26,7 @@ app.use("/api/v1/product", productRoutes)
 
 
 app.get("/",(req,res)=>{
-    res.send(`Server running at PORT ${port}(deployed from workflow 12899821)`)
+    res.send(`Server running at PORT ${port}(deployed from workflow with secrets)`)
 })
 app.listen(port, (req, res) => {
     console.log(`Server listening at PORT ${port}`)
