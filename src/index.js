@@ -21,14 +21,12 @@ app.use("/api/v1/auth", authRoutes)
 app.use("/api/v1/category", categoryRoutes)
 app.use("/api/v1/product", productRoutes)
 
-app.get('/', (req, res) => {
-    res.send(`Server running at ${port}  `)
-})
+
 
 
 
 app.get("/",(req,res)=>{
-    res.send(`Server running at PORT ${port}`)
+    res.send(`Server running at PORT ${port}(deployed from workflow)`)
 })
 app.listen(port, (req, res) => {
     console.log(`Server listening at PORT ${port}`)
